@@ -25,9 +25,15 @@ app.get('/hello', (req, res) => {
   res.send('Hello World!');
 });
 
+/*
 app.get('/budget', (req, res) => {
     res.json(budget);
-  });
+  });*/
+
+const myBudget = require("./myData.json")
+app.get( '/budget',(req,res)=>{
+    res.json(myBudget);
+})
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
