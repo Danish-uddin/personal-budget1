@@ -5,36 +5,47 @@ const port = 3000;
 app.use('/', express.static('public'));
 
 const budget = {
-    myBudget: [
+    myBudget:[
     {
-        title: 'Eat out',
-        budget: 25
+        title: 'Personal Expenses',
+        budget: 300
     },
     {
         title: 'Rent',
-        budget: 375
+        budget: 350
     },
     {
-        title: 'Furniture',
-        budget: 110
+        title: 'Market place',
+        budget: 85
     },
-    ]
+    {
+        title: 'Groceries',
+        budget: 30
+    },
+    {
+        title: 'Gas',
+        budget: 250
+    },
+    {
+        title: 'Travel',
+        budget: 450
+    },
+    {
+        title: 'Other',
+        budget: 359
+    },
+    
+]
 };
 
-app.get('/hello', (req, res) => {
-  res.send('Hello World!');
+app.get('/', (req, res) => {
+    res.send('hello world!');
 });
 
-/*
-app.get('/budget', (req, res) => {
-    res.json(budget);
-  });*/
-
-const myBudget = require("./myData.json")
-app.get( '/budget',(req,res)=>{
-    res.json(myBudget);
+app.use('/budget', (req, res) => {
+    res.sendFile("C:\\Users\\danish\\Desktop\\UNCC_courses\\NBAD\\dev\\week_03_copy\\personal-budget1\\myData.json");
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Example app listening at http://localhost:${port}`)
 });

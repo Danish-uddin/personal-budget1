@@ -1,34 +1,33 @@
 {
-
-    "myBudget": [
-        {
-            "title": "Eat out",
-            "budget": 25
-        },
-        {
-            "title": "Rent",
-            "budget": 375
-        },
-        {
-            "title": "Shopping",
-            "budget": 375
-        },
-        {
-            "title": "Vegetables",
-            "budget": 375
-        },
-        {
-            "title": "Chicken",
-            "budget": 375
-        },
-        {
-            "title": "Oil",
-            "budget": 375
-        },
-        {
-            "title": "Furniture",
-            "budget": 110
-        }
-    ]
+    "myBudget":[
+    {
+        "title": "Furniture",
+        "budget": 300
+    },
+    {
+        "title": "Petrol",
+        "budget": 350
+    },
+    {
+        "title": "Servicing",
+        "budget": 85
+    },
+    {
+        "title": "Brushing",
+        "budget": 30
+    },
+    {
+        "title": "Gardening",
+        "budget": 250
+    },
+    {
+        "title": "Travel",
+        "budget": 450
+    },
+    {
+        "title": "Shopping",
+        "budget": 359
+    }
     
+]
 }
